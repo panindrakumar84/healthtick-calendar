@@ -2,8 +2,7 @@
 
 A modern, real-time calendar booking system designed for health coaches. This application provides an intuitive single-day view for managing appointments, with a clean UI and robust backend logic powered by Firebase.
 
-
-*(Replace the URL above with a link to a screenshot of your app)*
+Deployed Link: `https://healthtick-calendar-seven.vercel.app/`
 
 ---
 
@@ -87,4 +86,4 @@ VITE_FIREBASE_APP_ID="your_app_id"
 npm run dev
 ```
 
-The application should now be running on `http://localhost:5173` (or another port if 5173 is in use).
+The application should now be running on `http://localhost:5173`
