@@ -48,6 +48,50 @@ the registered coach can manage their calendar.
 
 ---
 
+## Firebase Data Model
+
+The application uses two main collections in Firestore to store data.
+1. Clients Collection
+    ```json
+    {
+    "id": "string",
+    "name": "string",
+    "phone": "string"
+    }
+    ```
+2. Bookings Collection
+- One-Time Booking Model (Onboarding)
+    ```json
+    {
+    "id": "string"
+    "clientId": "string",
+    "type": "string",
+    "startTime": "string",
+    "durationMins": "number",
+    "isRecurring": "boolean",
+    "date": "string"
+    }
+    ```
+- Recurring Booking Model (Follow-up)
+    ```json
+    {
+    "id": "string"
+    "clientId": "string",
+    "type": "string",
+    "startTime": "string",
+    "durationMins": "number",
+    "isRecurring": "boolean",
+    "startDate": "string",
+    "recurrence": {
+        "freq": "string",
+        "day": "string"
+        "endDate": "string"
+    }
+    }
+    ```
+
+
+
 ## Getting Started
 
 Follow these steps to get the project running locally.
